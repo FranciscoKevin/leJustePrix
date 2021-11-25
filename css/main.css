@@ -1,0 +1,165 @@
+/**PAGE INDEX**/
+body {
+    background-color: #232020 !important;
+}
+
+.separator {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.title-card {
+    display: grid;
+    place-items: center;  
+    height: 200px;
+}
+
+.title-word {
+    animation: color-animation 1s linear infinite;
+}
+  
+.title-word-1 {
+    --color-1:#e7c06b;
+    --color-2:#DAA520;
+    --color-3:#9c771a;
+}
+
+.title-word-2 {
+    --color-1:#9c771a;
+    --color-2:#e7c06b;
+    --color-3:#DAA520;
+}
+  
+.title-word-3 {
+    --color-1:#9c771a;
+    --color-2:#DAA520;
+    --color-3:#e7c06b;;
+}
+  
+.title-word-4 {
+    --color-1:#9c771a;
+    --color-2:#DAA520;
+    --color-3:#e7c06b;
+}
+  
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}
+
+.title {
+    font-weight: 800;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.btn-play {
+    background-color:#DAA520 !important;
+    font-weight: bold !important;
+    font-size: 22px !important;
+    height: 80px;
+    width: 150px;
+}
+
+@-webkit-keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+}
+@keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.hvr-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.btn-play:hover, .btn-play:focus, .btn-play:active {
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+.btn-play:hover {
+    background-color: #e7c06b !important;
+}
+
+.modal-title {
+    text-align: center !important;
+}
+/**END PAGE INDEX**/
+
+/**PAGE GAME**/
+#instructions {
+    color: white;
+}
+
+.instruction {
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.plus {
+    background-color: #f67280;
+}
+
+.moins {
+    background-color: #ffa372;
+}
+
+.fini {
+    background-color : #0c9463;
+}
+
+.btn-color {
+    background-color:#DAA520 !important;
+    font-weight: bold !important;
+}
+
+.btn-color:hover {
+    background-color: #e7c06b !important;
+
+}
+
+.title-color {
+    color:#DAA520;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ring {
+    border: 3px solid #DAA520;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    margin: auto;
+}
+
+#countdown {
+  font-size: 38px;
+  color: white;
+}
